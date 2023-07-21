@@ -1,0 +1,15 @@
+# Function to calculate the mean of a numeric vector
+calculate_mean <- function(x) {
+  if (length(x) == 0) {
+    stop("Input vector is empty. Cannot calculate the mean.")
+  }
+  
+  total <- sum(x)
+  mean_value <- total / length(x)
+  return(mean_value)
+}
+
+# Example usage of the function
+vector_example <- c(3, 7, 9, 12, 5)
+result <- calculate_mean(vector_example)
+cat("Mean:", result)
